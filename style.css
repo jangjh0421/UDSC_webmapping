@@ -1,0 +1,46 @@
+body {
+    background-color: lightblue;
+  }
+/* Keep the header at the top and overlaid on the map */
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 10; /* Ensures it stays on top of other elements */
+  text-align: center;
+  font-family:Arial, Helvetica, sans-serif;
+}
+a {
+  color: black;
+  text-decoration:none;
+}
+
+#map {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+
+#marker {
+  background-image: url('https://images.theagencyre.com/production/images/listing/10479468/v1714553725/original/0x768/listing_10479468_0');
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#marker2 {
+  background-image: url('https://www.utoronto.ca/sites/default/files/2018-04-27-CIE_0.jpg');
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.maplibregl-popup {
+  max-width: 200px;
+}
