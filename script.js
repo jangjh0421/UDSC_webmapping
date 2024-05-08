@@ -18,6 +18,10 @@ const aqua = [-79.3861266102009, 43.64248355];
 const rec = [-79.386026, 43.641070];
 const harb = [-79.3823108504931, 43.63874069385611];
 const zandi = [-79.395029, 43.661685];
+const napier = [-123.001437, 49.274571];
+const yang = [-79.419525, 43.645957];
+const carb = [-79.393544, 43.655972];
+const cho = [127.035063, 37.270388];
 
 //----------------------------------------
 
@@ -56,6 +60,18 @@ const harb_popup = new maplibregl.Popup({offset: 25}).setText(
 );
 const zandi_popup = new maplibregl.Popup({offset: 25}).setText(
     '누워있으면 찌찌기모찌...가 아니라 쯔쯔가무시 걸릴 것 같아서 거부감이 있었지만? 이제 씨름도 하고 영상도 찍고 서인이가 나 업어주기도 하고 닭싸움도 하는 그런 잔디밭'
+);
+const napier_popup = new maplibregl.Popup({offset: 25}).setText(
+    '서인이 벤쿠버 집'
+);
+const yang_popup = new maplibregl.Popup({offset: 25}).setText(
+    '개맛있는 양갈비를 파는 그릭 음식점'
+);
+const carb_popup = new maplibregl.Popup({offset: 25}).setText(
+    '카공하기 나쁘지 않은 카페!'
+);
+const cho_popup = new maplibregl.Popup({offset: 25}).setText(
+    '전설의 그 조가네 숯불갈비'
 );
 
 //----------------------------------------
@@ -96,6 +112,17 @@ harb_el.id = 'marker11';
 const zandi_el = document.createElement('div');
 zandi_el.id = 'marker12';
 
+const napier_el = document.createElement('div');
+napier_el.id = 'marker13';
+
+const yang_el = document.createElement('div');
+yang_el.id = 'marker14';
+
+const carb_el = document.createElement('div');
+carb_el.id = 'marker15';
+
+const cho_el = document.createElement('div');
+cho_el.id = 'marker16';
 //----------------------------------------
 
 map.on('load', () => {
@@ -174,6 +201,26 @@ map.on('load', () => {
     new maplibregl.Marker({element: zandi_el})
     .setLngLat(zandi)
     .setPopup(zandi_popup)
+    .addTo(map);
+
+    new maplibregl.Marker({element: napier_el})
+    .setLngLat(napier)
+    .setPopup(napier_popup)
+    .addTo(map);
+    
+    new maplibregl.Marker({element: yang_el})
+    .setLngLat(yang)
+    .setPopup(yang_popup)
+    .addTo(map);
+
+    new maplibregl.Marker({element: carb_el})
+    .setLngLat(carb)
+    .setPopup(carb_popup)
+    .addTo(map);
+
+    new maplibregl.Marker({element: cho_el})
+    .setLngLat(cho)
+    .setPopup(cho_popup)
     .addTo(map);
     //----------------------------------------
 });
