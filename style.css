@@ -60,7 +60,7 @@ a {
 }
 
 #marker5 {
-  background-image: url('Screenshot 2024-05-08 at 4.13.04 PM.png');
+  background-image: url('https://www.toronto.ca/data/parks/img/2674/1.jpg');
   background-size: cover;
   width: 50px;
   height: 50px;
@@ -132,7 +132,7 @@ a {
 }
 
 #marker13 {
-  background-image: url('/Users/jangjaehyeong0421/VSC/UDSC_webmapping/np.png');
+  background-image: url('https://maps.googleapis.com/maps/api/staticmap?center=49.27423,-123.001434&zoom=15&size=768x576&maptype=roadmap&key=AIzaSyARFMLB1na-BBWf7_R3-5YOQQaHqEJf6RQ&signature=u0TGm_s1tgIxvOn15_0Ks3V5XwY=');
   background-size: cover;
   width: 50px;
   height: 50px;
